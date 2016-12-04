@@ -35,8 +35,8 @@ function ShoppingListCheckOffService() {
       { name: "cookies", quantity: 10 },
       { name: "candies", quantity: 5 },
       { name: "waffles", quantity: 5 },
-      { name: "soda", quantity: 10 },
-      { name: "beer", quantity: 2000 }
+      { name: "sodas", quantity: 10 },
+      { name: "beers", quantity: 2000 }
   ];
 
   var boughtItens = [];
