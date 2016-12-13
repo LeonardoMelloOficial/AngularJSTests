@@ -3,7 +3,11 @@
       <tbody style="display:none;">
         <tr ng-repeat="item in ctrl.items | orderBy: 'name'">
           <td>
-            <h4 class="list-group-item-heading">{{ item.name }}</h4>
+            <h4 class="list-group-item-heading">
+                {{item.short_name}} - {{ item.name }}
+                <!-- <spam ng-if="item.price_small"> - sm ${{item.price_small}} </spam>
+                <spam ng-if="item.price_large"> - lg ${{item.price_large}} </spam> -->
+            </h4>
             <p class="list-group-item-text">{{item.description}}</p>
           </td>
           <td class="text-right text-nowrap">
