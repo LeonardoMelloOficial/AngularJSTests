@@ -1,7 +1,12 @@
-<a ui-sref="home">Home</a> &lt; <span>Categories</span>
-
-<h3>Categories List</h3>
-
+<div class="row">
+    <div class="btn-group btn-breadcrumb">
+        <a ui-sref="home" class="btn btn-primary"><i class="glyphicon glyphicon-home"></i></a>
+        <a ui-sref="cate" class="btn btn-primary">Categories</a>
+    </div>
+</div>
+<div class="row">
+  <h3>Categories</h3>
+</div>
 <categories-list categories="ctrl.categories"></categories-list>
 
 <!-- <ui-view></ui-view> -->

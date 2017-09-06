@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Menu App</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <title>Leo's Menu App</title>
   </head>
   <body>
-    <h1>Welcome to Menu App</h1>
-
-    <ui-view></ui-view>
+    <div class="jumbotron text-center">
+      <h1>Welcome to Leo's Menu App</h1>
+    </div>
+    <div class="container">
+      <ui-view></ui-view>
+    </div>
 
     <loading-spinner></loading-spinner>
 

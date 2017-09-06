@@ -1,8 +1,26 @@
-<ul>
-  <!-- <li ng-repeat="category in $ctrl.categories" ui-sref="mainList.itemDetail({itemId: $index})">
-    {{ category.name }}
-  </li> -->
-  <li ng-repeat="category in $ctrl.categories" ui-sref="items({categoryShortName: category.short_name})">
+<!-- <ul>
+  <li ng-repeat="category in $ctrl.categories" >
     {{ category.name }}
   </li>
-</ul>
+</ul> -->
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Short Name</th>
+        <th>Name</th>
+        <!-- <th>Description</th> -->
+        <th>Items</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="category in $ctrl.categories">
+        <td>{{category.short_name}}</td>
+        <td>{{category.name}}</td>
+        <!-- <td>{{category.special_instructions}}</td> -->
+        <td><button class="btn btn-info" ui-sref="items({categoryShortName: category.short_name})">Check out items</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
