@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="css/signup.css">
+
+<div class="container">
+  <h2 id="signup-title" class="text-left">My Info</h2>
+      <div class="text-left" ng-if="user.lastName && user.firstName">{{user.lastName}}, {{user.firstName}}</div>
+      <div class="text-left">{{user.email}} </div>
+      <div class="text-left">{{user.phone}}</div>
+      <div class="text-left" ng-if="user.favoriteDish">Favorite item menu: {{user.favoriteDish}}</div>
+    <menu-item menu-item="user.favoriteDishItem" ng-if="user.favoriteDishItem">   </menu-item>
+
+</div>
