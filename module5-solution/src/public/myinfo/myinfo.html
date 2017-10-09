@@ -1,7 +1,9 @@
 <link rel="stylesheet" href="css/signup.css">
 
 <div class="container">
-  <h2 id="signup-title" class="text-left">My Info</h2>
+
+  <h2 id="signup-title" ng-if="!signedUp" class="text-left">Please sing up</h2>
+  <h2 id="signup-title" ng-if="signedUp" class="text-left">My Info</h2>
       <div class="text-left" ng-if="user.lastName && user.firstName">{{user.lastName}}, {{user.firstName}}</div>
       <div class="text-left">{{user.email}} </div>
       <div class="text-left">{{user.phone}}</div>
