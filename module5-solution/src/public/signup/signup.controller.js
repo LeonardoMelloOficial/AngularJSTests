@@ -11,10 +11,10 @@ function SignupController(MenuService, $scope){
   var $srvc = MenuService;
   $scope.sucess=false;
   $scope.user = {
-    firstName : 'Leo',
-    lastName : 'Mello',
-    email : 'leo@leo',
-    phone : '999-999-9999',
+    // firstName : 'Leo',
+    // lastName : 'Mello',
+    // email : 'leo@leo',
+    // phone : '999-999-9999',
   };
 
   $scope.$watch('user', function(error) {
